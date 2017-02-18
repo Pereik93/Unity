@@ -7,6 +7,29 @@ public class PlayerPrefsManager : MonoBehaviour {
     const string MASTER_VOLUME_KEY = "master_volume";
     const string DIFFICULTY_KEY = "difficulty";
     const string LEVEL_KEY = "level_unlocked_";
+    const string HIGH_SCORE_KEY = "high_score";
+    const string CURRENT_SCORE_KEY = "current_score";
+
+
+    public static void SetHighScore( int highScore)
+    {
+        PlayerPrefs.SetInt(HIGH_SCORE_KEY, highScore);
+    }
+
+    public static int GetHighScore()
+    {
+        return PlayerPrefs.GetInt(HIGH_SCORE_KEY);
+    }
+
+    public static void SetCurrentScore(int score)
+    {
+        PlayerPrefs.SetInt(CURRENT_SCORE_KEY, score);
+    }
+
+    public static int GetCurrentScore()
+    {
+        return PlayerPrefs.GetInt(CURRENT_SCORE_KEY);
+    }
 
     public static void SetMasterVolume(float volume)
     {

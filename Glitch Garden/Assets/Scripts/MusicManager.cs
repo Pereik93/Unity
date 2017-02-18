@@ -16,6 +16,7 @@ public class MusicManager : MonoBehaviour {
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        audioSource.volume = PlayerPrefsManager.GetMasterVolume();
     }
 
     // Update is called once per frame

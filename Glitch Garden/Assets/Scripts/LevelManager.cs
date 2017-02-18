@@ -6,14 +6,15 @@ public class LevelManager : MonoBehaviour {
     public float autoLoadNextLevelAfter;    
 
 	public void Start(){
-        if (autoLoadNextLevelAfter == 0)
+        if (autoLoadNextLevelAfter <= 0)
         {
-            Debug.Log("Level auto load disabled");
+            Debug.Log("Level auto load disabled, use a positive value to enable");
         }
         else
         {
             Invoke("LoadNextLevel", autoLoadNextLevelAfter);
         }
+
     }
 
     public void LoadNextLevel()
@@ -22,7 +23,10 @@ public class LevelManager : MonoBehaviour {
     }
 
     public void LoadLevel(string name){
-		
+		if(name == "02 Level_01")
+        {
+            PlayerPrefsManager.SetCurrentScore(0);
+        }
 		Application.LoadLevel(name);
 	}
 	
