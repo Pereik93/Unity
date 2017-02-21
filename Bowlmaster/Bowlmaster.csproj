@@ -78,6 +78,7 @@
     <Compile Include="Assets\START Pack\Scripts\ActionMaster2.cs" />
     <Compile Include="Assets\START Pack\Scripts\Ball.cs" />
     <Compile Include="Assets\START Pack\Scripts\CameraControl.cs" />
+    <Compile Include="Assets\START Pack\Scripts\DragLaunch.cs" />
     <Compile Include="Assets\START Pack\Scripts\OurScoreDisplayTest1.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
