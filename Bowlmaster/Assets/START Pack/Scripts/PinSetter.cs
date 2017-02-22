@@ -50,8 +50,7 @@ public class PinSetter : MonoBehaviour
     {
         Debug.Log("Renewing pins");
         GameObject newPins = Instantiate(pinSet);
-        newPins.transform.position += new Vector3(0, 20, 0);
-
+        newPins.transform.position += new Vector3(0, 0, 0);
     }
 
     void UpdateStandingCountAndSettle()
