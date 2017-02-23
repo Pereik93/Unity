@@ -32,6 +32,7 @@ public class Ball : MonoBehaviour {
     {
         inPlay = false;
         transform.position = initialPosition;
+        transform.rotation = Quaternion.identity;
         rigidBody.velocity = Vector3.zero;
         rigidBody.angularVelocity = Vector3.zero;
         rigidBody.useGravity = false;
